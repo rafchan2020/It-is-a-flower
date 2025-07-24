@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Navbar Example</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background-color: #f4f6fb;
+    }
+
+    .navbar {
+      background-color: #f4f6fb;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 40px;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      font-size: 24px;
+      font-weight: bold;
+      color: #db4c3f;
+    }
+
+    .logo img {
+      height: 30px;
+      margin-right: 10px;
+    }
+
+    .menu {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .menu a {
+      text-decoration: none;
+      color: #444;
+      font-size: 16px;
+    }
+
+    .menu a.active {
+      font-weight: bold;
+      color: #000;
+    }
+
+    .cart {
+      display: flex;
+      align-items: center;
+      font-size: 16px;
+      color: #333;
+    }
+
+    .cart i {
+      margin-right: 8px;
+      font-size: 18px;
+    }
+  </style>
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="logo">
+      <img src="https://cdn-icons-png.flaticon.com/512/739/739249.png" alt="logo">
+      Fauget
+    </div>
+
+    <nav class="menu">
+      <a href="#" class="active">Home</a>
+      <a href="#">Shop</a>
+      <a href="#">About us</a>
+    </nav>
+
+    <div class="cart">
+      <i class="fas fa-shopping-cart"></i>
+      Cart ($250)
+    </div>
+  </header>
+
+</body>
+</html>

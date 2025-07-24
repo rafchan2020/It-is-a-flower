@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Fresh Flowers</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: #f9f9f9;
+      color: #333;
+    }
+
+    header {
+      background: white;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #ddd;
+    }
+
+    nav a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: #333;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    .hero h1 span {
+      color: orange;
+    }
+
+    .products {
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .product {
+      background: white;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+    }
+
+    .flower-lover {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      padding: 40px 20px;
+    }
+
+    .flower-lover img {
+      max-width: 100%;
+      width: 300px;
+      margin-right: 20px;
+      border-radius: 10px;
+    }
+
+    .deals {
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .deal-images {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+    }
+
+    .deal-images img {
+      width: 200px;
+      border-radius: 10px;
+    }
+
+    .join {
+      background: url('https://images.unsplash.com/photo-1524592957779-180c49d96d52?auto=format&fit=crop&w=1400&q=80') no-repeat center center/cover;
+      color: white;
+      text-align: center;
+      padding: 60px 20px;
+      margin: 40px 0;
+    }
+
+    footer {
+      background: #eee;
+      padding: 20px;
+      text-align: center;
+      font-size: 14px;
+    }
+
+    @media (max-width: 768px) {
+      .flower-lover {
+        flex-direction: column;
+      }
+
+      .flower-lover img {
+        margin: 0 0 20px 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">🌸 Fresh Flowers</div>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Shop</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>ALWAYS <span>FRESH</span> FLOWERS</h1>
+    <p>Get the freshest flowers delivered to your door.</p>
+  </section>
+
+  <section class="products">
+    <h2>Our Plants</h2>
+    <div class="product-grid">
+      <div class="product"> Flower 1<br>৳ 200</div>
+      <div class="product">🌹 Flower 2<br>৳ 250</div>
+      <div class="product">🌸 Flower 3<br>৳ 180</div>
+      <div class="product">🌺 Flower 4<br>৳ 300</div>
+      <div class="product">🌻 Flower 5<br>৳ 220</div>
+      <div class="product">🌼 Flower 6<br>৳ 270</div>
+    </div>
+  </section>
+
+  <section class="flower Lover ">
+    <img src="images/flower-store.png" alt="">
+    <div>
+      <h3>Flower & Plants Lover</h3>
+      <p>We provide a wide range of fresh flowers and plants for your home and loved ones.</p>
+    </div>
+  </section>
+
+  <section class="deals">
+    <h3>Latest Deals</h3>
+    <div class="deal-images">
+      <img src="images/news-letter-bg.png" alt="Deal 1"/>
+      <img src="images/sample-flower-image.png" alt="Deal 2"/>
+    </div>
+  </section>
+
+  <section class="join">
+    <h2>Join the Beautiful World of Flowers</h2>
+    <p>Subscribe for latest updates and offers.</p>
+  </section>
+
+  <footer>
+    &copy; 2025 Fresh Flowers | Privacy Policy | Terms | Social Links
+  </footer>
+</body>
+</html>
